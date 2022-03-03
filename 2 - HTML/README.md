@@ -1,5 +1,7 @@
 # Prácticas HTML
 
+Pagina desplegada: [aqui](https://yair-practica-pasteleria-launchx.netlify.app/).
+
 ## **Caso: Pastelería**
 <br>
 
