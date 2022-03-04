@@ -161,7 +161,7 @@ input[type=number] {
 }
 
 table {
-	color:#666;
+	color:rgb(58, 58, 58);
 	font-size:12px;
   font-weight: bold;
 	background:#eaebec;
