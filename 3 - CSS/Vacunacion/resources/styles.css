@@ -21,7 +21,7 @@ ul{
 .wrapper {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 60px 180px;
+    padding: 0 180px;
 }
 
 .left img{
@@ -33,13 +33,24 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: rgb(0, 225, 255); */
+    background-color: rgba(255, 255, 255, 0.95);
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    height: 90px;
 }
 
 .logo {
     width: 160px;
     height: 40px;
     margin-bottom: 1em;
+}
+
+.icon {
+    color: #2747c5;
+    background-color: #e9f1fe;
+    padding: .25em;
+    margin-right: 10px;
 }
 
 .nav-items {
@@ -57,7 +68,7 @@ ul{
 
 .hero-container {
     display: flex;
-    margin-top: 80px;
+    margin-top: 100px;
     justify-content: space-between;
     align-items: center;
 }
@@ -79,10 +90,10 @@ ul{
 }
 
 .hero-container .left h1 {
-    font-weight: bold;
-    font-size: 70px;
+    font-weight: bolder;
+    font-size: 75px;
     line-height: 80px;
-    width: 500px;
+    width: 550px;
     color: #203e72;
 }
 
@@ -103,6 +114,31 @@ ul{
     color: #5c687e;
     font-weight: bold;
 }
+
+.hero-card {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding: 0 1em;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    /* background-color: black; */
+}
+
+.hero-card h2 {
+    margin: 0 2em;
+    padding: 5px;
+}
+
+.hero-card-elem {
+    margin-top: -2em;
+    margin-bottom: 1em;
+    padding: 0 1rem;
+}
+
+.hero-card-elem .btn-disp {
+    margin-top: 2em;
+}
+
 
 .btn-disp .btn {
     background-color: #2b4bc8;
