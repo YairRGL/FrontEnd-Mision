@@ -269,7 +269,8 @@ ul{
 .container-recommends .right-ben p {
     margin-top: 50px;
     margin-right: 5em;
-    font-size: 25px;
+    margin-left: 1em;
+    font-size: 22px;
     line-height: 35px;
     color: #5c687e;
 }
@@ -278,7 +279,6 @@ ul{
     margin-top: 5em;
     
 }
-
 
 .preps-item {
     display: flex;
@@ -419,9 +419,83 @@ ul{
 }
 
 .footer {
+    display: grid;
     background-color: #eef3ff;
-    padding: 3rem 0 3rem 0;
+
+}
+
+.list {
+    display: grid;
+    width: 50%;
+    margin: -3rem 5em 0 auto;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: repeat(4, max-content);;
+    justify-content: space-between;
+    line-height: 2.5em;
+}
+
+.footer-top {
+    grid-template-columns: repeat(1, 1fr);;
+    margin: 2rem auto;
     width: 100%;
     text-align: center;
     margin: 0 auto;
+}
+
+.footer-bottom {
+    display:grid;
+    grid-template-columns: repeat(2, max-content);
+    width:100%;
+    padding: 0 5em;
+    justify-content:space-between;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+.footer-bottom p {
+    color: #7f8ca2;
+    font-weight: bold;
+}
+
+.foot-left {
+    display: grid;
+    width: 100%;
+    margin: 0 5em 0 auto;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+}
+
+.foot-left .list p, a {
+    color: #7f8ca2;
+    font-weight: bold;
+}
+
+.footer-logo {
+    margin-left: 5em;
+    margin-top: 5em;
+    width: 160px;
+    height: 40px;
+    
+}
+
+.footer-logo a{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #2747c5;
+}
+
+.footer-logo p {
+    margin-top: 1em;
+    margin-left: 1em;
+    color: #7f8ca2;
+    font-weight: bold;
+    text-align: left;
+    width: 180px;
+    line-height: 1.5rem;
+}
+
+.title a{
+    color: #1f3e72;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
