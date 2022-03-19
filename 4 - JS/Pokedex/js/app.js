@@ -81,7 +81,7 @@ const mostrarMoves = async moves => {
     pokemonMoves.innerHTML = '';
     pokemonMoves.style.display = 'block';
     const pt = document.createElement('p');
-    pt.textContent = 'Movimientos';
+    pt.textContent = 'Moves';
     pt.classList.add("movs");
     pokemonStats.appendChild(pt);
     moves.forEach( move => {
@@ -97,7 +97,7 @@ const cardColor = async types => {
 }
 
 const noEcontrado = () => {
-    pokemonName.textContent = 'NO ENCONTRADO';
+    pokemonName.textContent = 'NOT FOUND';
     pokemonImg.src = './assets/img/not-found.jpg';
     pokemonImg.style.background =  '#fff';
     pokemonInput.style.borderColor = 'red';
