@@ -42,7 +42,6 @@ const buscarPokemon = async (e) => {
 const mostrarPokemon = async data => {
     const sprite =  data.sprites.other.home.front_default;
     const { stats, types, moves } = data;
-    console.log(data);
     pokemonInput.style.borderColor = '#2a75bb';
     pokemonName.textContent = data.name.toUpperCase();
     pokemonImg.src = sprite;
