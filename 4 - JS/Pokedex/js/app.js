@@ -33,7 +33,7 @@ const buscarPokemon = async (e) => {
     pokemonType.innerHTML = '';
     const url = `https://pokeapi.co/api/v2/pokemon`;
     let value = pokemonInput.value.toLowerCase();
-    await fetch(`${url}/${value.toLowerCase()}`)
+    await fetch(`${url}/${value}`)
         .then(data => data.json())
         .then(response => mostrarPokemon(response))
         .catch(err => noEcontrado())
