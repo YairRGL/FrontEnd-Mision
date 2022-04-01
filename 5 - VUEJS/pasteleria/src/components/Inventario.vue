@@ -8,21 +8,9 @@
           <th>Cantidad restante</th>
         </thead>
         <tbody>
-          <tr>
-            <td>Chocolate</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>Fresa</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Vainilla</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>Limon</td>
-            <td>23</td>
+          <tr v-for="(pastel, i) in $store.state.pasteles" :key="i">
+            <td>{{ pastel.sabor }}</td>
+            <td>{{ pastel.stock }}</td>
           </tr>
         </tbody>
       </table>
@@ -35,21 +23,9 @@
           <th>Cantidad restante</th>
         </thead>
         <tbody>
-          <tr>
-            <td>Adorno 1</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>Adorno 2</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Adorno 3</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>Adorno 4</td>
-            <td>23</td>
+          <tr v-for="(adorno, i) in $store.state.adornos" :key="i">
+            <td>{{ adorno.descp }}</td>
+            <td>{{ adorno.stock }}</td>
           </tr>
         </tbody>
       </table>

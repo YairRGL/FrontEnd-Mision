@@ -9,22 +9,22 @@
             <li>
               <input type="checkbox" id="p1" name="pastel" value="chocolate" />
               <label for="p1"><img src="../assets/images/p1.png" /></label>
-              <label for="p1">$300 MXN</label>
+              <label for="p1">${{ $store.state.pasteles[0].precio }} MXN</label>
             </li>
             <li>
               <input type="checkbox" id="p2" name="pastel" value="vainilla" />
               <label for="p2"><img src="../assets/images/p2.png" /></label>
-              <label for="p2">$350 MXN</label>
+              <label for="p1">${{ $store.state.pasteles[1].precio }} MXN</label>
             </li>
             <li>
               <input type="checkbox" id="p3" name="pastel" value="fresa" />
               <label for="p3"><img src="../assets/images/p3.png" /></label>
-              <label for="p3">$250 MXN</label>
+              <label for="p1">${{ $store.state.pasteles[2].precio }} MXN</label>
             </li>
             <li>
               <input type="checkbox" id="p4" name="pastel" value="limon" />
               <label for="p4"><img src="../assets/images/p4.png" /></label>
-              <label for="p4">$380 MXN</label>
+              <label for="p1">${{ $store.state.pasteles[3].precio }} MXN</label>
             </li>
           </ul>
           <h3>Adornos disponibles:</h3>
