@@ -39,7 +39,7 @@ const buscarPokemon = async (e) => {
         .catch(err => noEcontrado())
 }
 
-const mostrarPokemon = async data => {
+const mostrarPokemon = data => {
     const sprite =  data.sprites.other.home.front_default;
     const { stats, types, moves } = data;
     pokemonInput.style.borderColor = '#2a75bb';
@@ -51,7 +51,7 @@ const mostrarPokemon = async data => {
     mostrarMoves(moves);
 }
 
-const mostrarTipo = async types => {
+const mostrarTipo = types => {
     pokemonType.innerHTML = '';
     types.forEach(type => {
         const typeTxt = document.createElement("div");
@@ -63,7 +63,7 @@ const mostrarTipo = async types => {
     })
 }
 
-const mostrarStats = async stats => {
+const mostrarStats = stats => {
     pokemonStats.innerHTML = '';
     stats.forEach( stat => {
         const statsElement = document.createElement("div");
@@ -77,7 +77,7 @@ const mostrarStats = async stats => {
     });
 }
 
-const mostrarMoves = async moves => {
+const mostrarMoves = moves => {
     pokemonMoves.innerHTML = '';
     pokemonMoves.style.display = 'block';
     const pt = document.createElement('p');
@@ -90,7 +90,7 @@ const mostrarMoves = async moves => {
     })
 }
 
-const cardColor = async types => {
+const cardColor = types => {
     const mainColor = typeColors[types[0].type.name];
     pokemonCard.style.borderColor = mainColor;
     pokemonMoves.style.borderColor = mainColor;
