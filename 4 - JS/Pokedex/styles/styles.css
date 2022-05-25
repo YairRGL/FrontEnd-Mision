@@ -108,7 +108,16 @@ button:hover {
     font-style: oblique;
 }
 
-.movs {
+.movsTitle{
     padding: 1rem;
     font-size: 1.5em;
+    display: inline-block;
 }
+
+.movs {
+    display: inline;
+}
+
+.movs:not(:last-of-type)::after {
+    content: ", "
+ }

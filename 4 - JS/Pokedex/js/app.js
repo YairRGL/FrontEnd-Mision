@@ -36,7 +36,7 @@ const buscarPokemon = async (e) => {
     await fetch(`${url}/${value}`)
         .then(data => data.json())
         .then(response => mostrarPokemon(response))
-        .catch(err => noEcontrado())
+        .catch(e => noEcontrado(e))
 }
 
 const mostrarPokemon = data => {
@@ -82,11 +82,13 @@ const mostrarMoves = moves => {
     pokemonMoves.style.display = 'block';
     const pt = document.createElement('p');
     pt.textContent = 'Moves';
-    pt.classList.add("movs");
+    pt.classList.add("movsTitle");
     pokemonStats.appendChild(pt);
     moves.forEach( move => {
-        const node = document.createTextNode(`${move.move.name}, `);
-        pokemonMoves.appendChild(node);
+        const pMov = document.createElement('p');
+        pMov.textContent = `${move.move.name}`;
+        pMov.classList.add("movs");
+        pokemonMoves.appendChild(pMov);
     })
 }
 
@@ -96,7 +98,8 @@ const cardColor = types => {
     pokemonMoves.style.borderColor = mainColor;
 }
 
-const noEcontrado = () => {
+const noEcontrado = (err) => {
+    console.log(err);
     pokemonName.textContent = 'NOT FOUND';
     pokemonImg.src = './assets/img/not-found.jpg';
     pokemonImg.style.background =  '#fff';
