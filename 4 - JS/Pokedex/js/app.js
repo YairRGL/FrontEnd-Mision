@@ -98,8 +98,7 @@ const cardColor = types => {
     pokemonMoves.style.borderColor = mainColor;
 }
 
-const noEcontrado = (err) => {
-    console.log(err);
+const noEcontrado = (e) => {
     pokemonName.textContent = 'NOT FOUND';
     pokemonImg.src = './assets/img/not-found.jpg';
     pokemonImg.style.background =  '#fff';
